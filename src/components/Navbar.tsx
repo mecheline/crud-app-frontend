@@ -116,7 +116,7 @@ function ResponsiveAppBar() {
             >
               {user == null ? (
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <RouterLink to={"/login"} style={{ textDecoration: "none" }}>
+                  <RouterLink to={"/"} style={{ textDecoration: "none" }}>
                     <Typography sx={{ textAlign: "center", color: "#6C5DD3" }}>
                       Login
                     </Typography>
@@ -163,7 +163,7 @@ function ResponsiveAppBar() {
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {user == null ? (
-                <RouterLink to="/login" style={{ textDecoration: "none" }}>
+                <RouterLink to="/" style={{ textDecoration: "none" }}>
                   <Button
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: "#6C5DD3", display: "block" }}

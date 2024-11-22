@@ -41,7 +41,7 @@ const Signup = () => {
   }
   if (isSuccess) {
     toast.success("Signup success");
-    navigate("/login");
+    navigate("/");
   }
   return (
     <Card sx={{ width: 300, p: 2, mx: "auto", mt: 4 }}>
@@ -224,7 +224,7 @@ const Signup = () => {
               }}
             >
               Already have an account?
-              <Link style={{ color: "#6C5DD3" }} to={"/login"}>
+              <Link style={{ color: "#6C5DD3" }} to={"/"}>
                 Login
               </Link>
             </Typography>

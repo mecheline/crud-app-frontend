@@ -11,8 +11,8 @@ const App = () => {
     <Router>
       <ResponsiveAppBar />
       <Routes>
+        <Route path="/" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/login" element={<Login />}></Route>
         <Route path="/addcourse" element={<NewGoal />}></Route>
       </Routes>
       <Toaster />

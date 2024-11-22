@@ -11,7 +11,7 @@ import {
 import { type ChangeEvent, useState } from "react";
 import { UserProps } from "../models/types.models";
 import { useSignupMutation } from "../api/authService";
-import { Password } from "@mui/icons-material";
+
 import { toast } from "sonner";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -24,8 +24,7 @@ const Signup = () => {
     password: "",
   });
 
-  const [signup, { data, isError, error, isLoading, isSuccess }] =
-    useSignupMutation();
+  const [signup, { isError, isLoading, isSuccess }] = useSignupMutation();
   const signupHandler = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     const payload = {

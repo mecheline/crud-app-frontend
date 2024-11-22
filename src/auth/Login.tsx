@@ -10,8 +10,8 @@ import {
 } from "@mui/material";
 import { type ChangeEvent, useEffect, useState } from "react";
 import { LoginProps } from "../models/types.models";
-import { useLoginMutation, useSignupMutation } from "../api/authService";
-import { Password } from "@mui/icons-material";
+import { useLoginMutation } from "../api/authService";
+
 import { toast } from "sonner";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -25,8 +25,7 @@ const Login = () => {
     password: "",
   });
 
-  const [login, { data, isError, error, isLoading, isSuccess }] =
-    useLoginMutation();
+  const [login, { data, isError, isLoading, isSuccess }] = useLoginMutation();
   const signupHandler = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     const payload = {

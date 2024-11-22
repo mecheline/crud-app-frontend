@@ -1,0 +1,28 @@
+{
+  "courses": [
+    {
+      "id": 0,
+      "goal": "Learn TypeScript",
+      "summary": "Learn from the top down!",
+      "category": "Frontend"
+    },
+    {
+      "id": 1,
+      "goal": "Learn Redux toolkit",
+      "summary": "Learn from the top down!",
+      "category": "Frontend"
+    },
+    {
+      "id": 2,
+      "goal": "Learn RTK Query",
+      "summary": "Learn from the top down!",
+      "category": "Frontend"
+    },
+    {
+      "id": 2,
+      "goal": "Learn NodeJS",
+      "summary": "Learn from the top down!",
+      "category": "Backend"
+    }
+  ]
+}

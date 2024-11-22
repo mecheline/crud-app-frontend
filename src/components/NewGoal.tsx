@@ -1,4 +1,4 @@
-import React, { type FormEvent, useState } from "react";
+import { type FormEvent, useState } from "react";
 
 import { addGoal, editGoal } from "../features/CourseSlice";
 
@@ -17,7 +17,6 @@ import {
 } from "@mui/material";
 import CourseGoals from "./CourseGoals";
 import { RootState } from "../store/store";
-import { Cancel } from "@mui/icons-material";
 
 type GoalProps = {
   title: string;
@@ -26,7 +25,6 @@ type GoalProps = {
 };
 
 const NewGoal = () => {
-  //   const dispatch = useAppDispatch();
   const dispatch = useDispatch();
   const courses = useSelector((state: RootState) => state.root.course.courses);
   const [newgoal, setNewgoal] = useState<GoalProps>({

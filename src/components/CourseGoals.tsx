@@ -1,4 +1,3 @@
-import { ViewColumnSharp } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -15,8 +14,7 @@ import {
 import { ChangeEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
-import { editGoal, GoalProps, removeGoal } from "../features/CourseSlice";
-import { TableRowsLoader } from "./TableSkeleton";
+import { removeGoal } from "../features/CourseSlice";
 
 type editHandlerProps = {
   editHandler: (id: number) => void;
@@ -30,6 +28,7 @@ const CourseGoals = ({ editHandler }: editHandlerProps) => {
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (event: unknown, newPage: number) => {
+    console.log(event);
     setPage(newPage);
   };
 

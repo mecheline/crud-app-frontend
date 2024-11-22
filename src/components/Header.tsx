@@ -1,9 +1,4 @@
-import React, { type FC, type PropsWithChildren, type ReactNode } from "react";
-
-// type Props = {
-//   image: { src: string; alt: string };
-//   children: ReactNode;
-// };
+import { type FC, type PropsWithChildren } from "react";
 
 type HeaderProps = PropsWithChildren<{ image: { src: string; alt: string } }>;
 

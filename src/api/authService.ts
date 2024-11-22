@@ -5,7 +5,9 @@ import {
   UserProps,
 } from "../models/types.models";
 const staggeredBaseQuery = retry(
-  fetchBaseQuery({ baseUrl: "http://localhost:5000/api/auth" }),
+  fetchBaseQuery({
+    baseUrl: "https://crud-app-seven-gules.vercel.app/api/auth",
+  }),
   {
     maxRetries: 3,
   }

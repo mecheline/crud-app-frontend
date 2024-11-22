@@ -55,7 +55,7 @@ function ResponsiveAppBar() {
     console.log(setting);
     if (setting === "Logout") {
       dispatch(loggedOut());
-      navigate("/login");
+      navigate("/");
     }
     setAnchorElUser(null);
   };

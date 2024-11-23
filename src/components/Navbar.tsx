@@ -16,6 +16,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import React from "react";
 import { loggedOut } from "../features/AuthSlice";
+import { toast } from "sonner";
 
 const pages = [
   {
@@ -55,6 +56,7 @@ function ResponsiveAppBar() {
     console.log(setting);
     if (setting === "Logout") {
       dispatch(loggedOut());
+      toast.error("Logged out");
       navigate("/");
     }
     setAnchorElUser(null);

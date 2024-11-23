@@ -44,6 +44,7 @@ const Login = () => {
   useEffect(() => {
     if (isSuccess) {
       dispatch(loggedIn(data));
+      toast.success("Logged in successfully");
       navigate("/addcourse");
     }
   }, [isSuccess]);

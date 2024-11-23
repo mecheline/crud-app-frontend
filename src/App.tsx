@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/addcourse" element={<NewGoal />}></Route>
       </Routes>
-      <Toaster />
+      <Toaster richColors={true} position="top-center" />
     </Router>
   );
 };
